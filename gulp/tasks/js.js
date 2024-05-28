@@ -1,4 +1,5 @@
 import webpack from 'webpack-stream'; //npm i webpack-stream -D // плагин для работы с js
+import map from "gulp-sourcemaps"; // npm i gulp-sourcemaps -D
 
 
 export const js = () => {
@@ -9,12 +10,20 @@ export const js = () => {
       message: "Error: <%= error.message %>"
     })
   ))
-  .pipe(webpack({
-    mode: app.isBuild ? 'production' : 'development',
-    output: {
-      filename: 'app.min.js'
-    },
-  }))
+  // .pipe(app.plugins.if(
+  //   app.isDev,
+  //   map.init()
+  // ))
+  // .pipe(webpack({
+  //   mode: app.isBuild ? 'production' : 'development',
+  //   output: {
+  //     filename: 'app.min.js'
+  //   },
+  // }))
+  // .pipe(app.plugins.if(
+  //   app.isDev,
+  //   map.write(".")
+  // ))
   .pipe(app.gulp.dest(app.path.build.js))  
   // .pipe(app.plugins.browserSync.stream());
 };

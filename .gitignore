@@ -4,8 +4,9 @@
 # Вспомогательные файлы
 *.log*
 node_modules/
-dist/
+# dist/
 gulp/version.json
 
 # Папка с собранными файлами проекта
 # build/
+trash/~$рассчет колонок.xlsx

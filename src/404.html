@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('./html/head.html', {
+"title": "flower bridge",
+})
+
+<body>
+  @@include('./html/header.html', {})
+
+  <div class="container container__not-found not-found">
+    <div class="not-found__wrapper">
+      <h1 class="not-found__title">404</h1>
+      <h3 class="not-found__subtitle">Ошибка!</h3>
+      <h4 class="not-found__text">
+        К сожалению, запрашиваемая
+        Вами страница не найдена...
+      </h4>
+      <a class="not-found__link">
+        Перейдите на главную страницу
+      </a>
+    </div>
+  </div>
+
+
+
+  @@include('./html/footer.html', {})
+</body>
+
+</html>

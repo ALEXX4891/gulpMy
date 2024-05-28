@@ -30,7 +30,7 @@ export const scss = () => {
       }).on("error", sass.logError)
     )
     .pipe(app.plugins.if(
-      app.isBuild,
+      app.isDev,
       map.write(".")
     ))
     .pipe(app.gulp.dest(app.path.build.css)) // выгружаем НЕминифицированный css
