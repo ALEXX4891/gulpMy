@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
 @@include('./html/head.html', {
-"title": "flower bridge",
+"title": "Экотех. Ошибка 404",
 })
 
-<body>
+<body class="not-found" data-page="404">
   @@include('./html/header.html', {})
 
-  <div class="container container__not-found not-found">
+  <!-- <div class="container container_not-found not-found">
     <div class="not-found__wrapper">
       <h1 class="not-found__title">404</h1>
       <h3 class="not-found__subtitle">Ошибка!</h3>
@@ -19,8 +19,34 @@
         Перейдите на главную страницу
       </a>
     </div>
-  </div>
+  </div> -->
 
+
+  <main class="main">
+    <section class="section not-found">
+      <div class="container not-found__container">
+        <div class="not-found__img">
+          <img src="@img/404.png" alt="ошибка 404">
+        </div>
+
+        <h1 class="not-found__title">
+          Страница не найдена
+        </h1>
+        <p class="not-found__text">
+          Неправильно набран адрес или такой страницы не существует
+        </p>
+        <div class="not-found__btns-wrapper">
+          <a class="not-found__link btn btn_reset btn_white" href="javascript:history.back()">
+            Вернуться назад
+          </a>
+          <a class="not-found__link btn btn_reset btn_blue" href="index.html">
+            На главную
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
 
 
   @@include('./html/footer.html', {})

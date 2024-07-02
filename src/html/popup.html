@@ -1,0 +1,64 @@
+<div class="popup" id="popup-form">
+  <div class="popup__body">
+    <div class="popup__content popup-form">
+      <form class="popup-form__project-form project-form project-form_popup" action="#" method="post"
+        enctype="multipart/form-data">
+        <button class="project-form__close popup-close">
+          <svg width="51" height="51" viewBox="0 0 51 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M14.3793 14.3102C14.8556 13.8698 15.5956 13.9022 16.0321 14.3827L25 24.2534L33.9679 14.3827C34.4044 13.9022 35.1444 13.8698 35.6207 14.3102C36.0969 14.7507 36.1291 15.4973 35.6925 15.9778L26.5869 26L35.6925 36.0222C36.1291 36.5027 36.0969 37.2493 35.6206 37.6898C35.1444 38.1302 34.4044 38.0978 33.9679 37.6173L25 27.7467L16.0321 37.6173C15.5956 38.0978 14.8556 38.1302 14.3794 37.6898C13.9031 37.2493 13.8709 36.5027 14.3075 36.0222L23.4131 26L14.3075 15.9778C13.8709 15.4973 13.9031 14.7507 14.3793 14.3102Z"
+              fill="black" />
+          </svg>
+        </button>
+        <h2 class="project-form__title">
+          Оставьте заявку
+        </h2>
+        <p class="project-form__subtitle">
+          Мы свяжемся с вами и расскажем подробнее обо всех видах услуг
+        </p>
+
+        <div class="project-form__inputs">
+          <input class="project-form__input" type="text" name="name" placeholder="Имя">
+          <input id="phone_2" class="project-form__input" type="tel" name="phone" placeholder="+7(___) ___ __ __ *"
+            required>
+          <!-- <input class="project-form__input" type="email" name="email" placeholder="Email" required> -->
+          <textarea class="project-form__input project-form__input_textarea" name="textarea" rows="2" cols="10" value=""
+            placeholder="Удобное время для звонка"></textarea>
+          <input class="project-form__submit btn btn-reset btn_white popup-link" type="submit" href="#success">
+        </div>
+
+        <label class="project-form__label checkbox">
+          Я даю согласие на
+          <input class="checkbox__input" type="checkbox" name="check" value="да">
+          <span></span>
+          <a class="checkbox__link" href="agreement.html" target="_blank">обработку персональных данных</a>
+        </label>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="popup" id="success">
+  <div class="popup__body">
+    <div class="popup__content popup-success">
+      <h3 class="popup-success__title">
+        заявка отправлена!
+      </h3>
+      <p class="popup-success__subtitle">
+        Наш менеджер свяжется с вами
+        в ближайшее время
+      </p>
+      <div class="popup-success__icon">
+        <svg width="54" height="50" viewBox="0 0 54 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M43.2253 2.86623C41.1191 -0.239904 37.6762 -0.546814 35.6166 0.644895C33.8129 1.68863 32.7942 3.07651 32.5237 4.70389C32.2589 6.29656 32.7349 7.97913 33.621 9.59454C35.3903 12.8201 38.965 16.0936 42.8032 18.5261C42.9346 18.6094 43.082 18.6442 43.2253 18.6354C43.3687 18.6442 43.5161 18.6094 43.6475 18.5261C47.4857 16.0936 51.0604 12.8201 52.8297 9.59454C53.7158 7.97913 54.1918 6.29656 53.927 4.70389C53.6565 3.07651 52.6378 1.68863 50.834 0.644899C48.7745 -0.546814 45.3316 -0.239904 43.2253 2.86623Z"
+            fill="#2DA1B7" />
+          <path d="M0 27.3155V47.2484H9.73521V27.3155H0Z" fill="#2DA1B7" />
+          <path
+            d="M9.73521 27.3155V47.2484C22.7155 51.3826 32.8713 49.8322 36.4169 49.0939C39.6619 48.4182 42.1859 46.1409 39.3014 43.5571C39.3014 43.5571 42.1859 43.5571 42.1859 40.6041C42.1859 37.6511 39.3014 37.2819 39.3014 37.2819C39.3014 37.2819 42.907 37.2819 42.907 33.9598C42.907 30.6377 39.3014 30.6377 39.3014 30.6377C39.3014 30.6377 42.1859 30.6377 42.1859 27.3155C42.1859 23.9933 39.3014 23.6242 39.3014 23.6242H28.4845C31.0805 10.6309 24.999 7.87478 21.6338 8.12086C22.4991 21.7047 14.062 26.5772 9.73521 27.3155Z"
+            fill="#2DA1B7" />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
