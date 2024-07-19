@@ -1,3 +1,5 @@
 # Plant
 
-запуск - npm run dev
+дев - npm run dev
+
+прод - npm run build
